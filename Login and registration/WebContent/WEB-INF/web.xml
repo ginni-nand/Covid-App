@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <servlet>
+    <servlet-name>RS</servlet-name>
+    <servlet-class>newp.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RS</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ls</servlet-name>
+    <servlet-class>newp.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ls</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>los</servlet-name>
+    <servlet-class>newp.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>los</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
+</element>
